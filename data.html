@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incident Reports</title>
+    <link rel="stylesheet" href="data.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Incident Reports</h2>
+        <button class="manage-btn">Manage Incident Reports</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr.</th>
+                    <th>Incident ID</th>
+                    <th>Reported By</th>
+                    <th>IP</th>
+                    <th>Reported On</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>001632</td>
+                    <td>John Doe</td>
+                    <td>10.1.2.230</td>
+                    <td>2024-07-29 04:39:49</td>
+                    <td class="status pending">Pending</td>
+                    <td><button class="view-details-btn">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>001557</td>
+                    <td>Jane Smith</td>
+                    <td>10.1.2.230</td>
+                    <td>2024-07-08 19:47:54</td>
+                    <td class="status pending">Pending</td>
+                    <td><button class="view-details-btn">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>001510</td>
+                    <td>John Doe</td>
+                    <td>10.1.2.230</td>
+                    <td>2024-07-24 10:32:12</td>
+                    <td class="status spam">Spam</td>
+                    <td><button class="view-details-btn">View Details</button><a href="data.html"></a></td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button class="page-btn">Previous</button>
+            <button class="page-btn">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">Next</button>
+        </div>
+    </div>
+</body>
+</html>

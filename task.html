@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Tasks</h1>
+
+        
+<div style="margin-left: -127px;">
+    <div class="mytasks" style="margin: 0 auto;
+        
+        padding: 20px;
+        border-radius: 8px;
+
+        color: rgb(35, 251, 35);"
+        >  <h2 style="MARGIN-LEFT: -21PX;
+        MARGIN-TOP: -14PX;">
+                    My Tasks
+                </h2></div>
+           
+            <div class="custom-select" style="color: light grey;"></div>
+            <label for="">
+                Show 
+                <select name="dataTable_length" aria-controls="dataTable" class="custom-select">
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                </select>
+                enteries
+            </label>
+           
+                
+               
+       
+        <table id="taskTable">
+            <thead>
+                <tr>
+                    <th>Sr.</th>
+                    <th>Task ID</th>
+                    <th>Task Title</th>
+                    <th>Assigned By</th>
+                    <th>Assigned To</th>
+                    <th>Assigned On</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>1</td>
+                    <td>001</td>
+                    <td>Task Title 1</td>
+                    <td>User A</td>
+                    <td>User B</td>
+                    <td>2024-07-09 07:15:56</td>
+                    <td>2024-07-09</td>
+                    <td><span class="status completed">Completed</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>002</td>
+                    <td>Task Title 2</td>
+                    <td>Sameer </td>
+                    <td>John</td>
+                    <td>2024-07-09 08:16:02</td>
+                    <td>2024-08-09</td>
+                    <td><span class="status completed">Completed</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>003</td>
+                    <td>Task Title 3</td>
+                    <td>User</td>
+                    <td>ali</td>
+                    <td>2024-07-09 07:15:56</td>
+                    <td>2024-07-09</td>
+                    <td><span class="status completed">Completed</span></td>
+                    <td><button class="view-btn">View</button></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="add-task-form">
+            <h2 style="color: rgb(35, 251, 35);">Add New Task</h2>
+            <form id="taskForm">
+                <div class="form-group">
+                    <label for="taskTitle">Task Title</label>
+                    <input type="text" id="taskTitle" placeholder="Enter task title">
+                </div>
+                <div class="form-group">
+                    <label for="assignedTo">Assigned To</label>
+                    <select id="assignedTo">
+                        <option value="userA">User A</option>
+                        <option value="userB">User B</option>
+                        <option value="Sameer">Sameer</option>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" id="dueDate">
+                </div>
+                <div class="form-group">
+                    <label for="priority">Select Priority</label>
+                    <select id="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="taskDetails">Task Details</label>
+                    <textarea id="taskDetails" placeholder="Enter task details"></textarea>
+                </div>
+                <button type="button" id="addTaskBtn">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

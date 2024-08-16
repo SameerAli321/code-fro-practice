@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .sam{
+            height: 100vh;
+            display :grid ;
+            place-items: center ;
+            background-color: lightcoral;
+        }
+        .card{
+            position: relative;
+            background: transparent; 
+            overflow: hidden;
+            z-index: 0;
+
+        }
+        .corner{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            background-color: #1cd81f;
+
+        }
+        .card::before{
+            content: "";
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            transform: scale(1);
+            height: 20px;
+            width: 20px;
+            transition: 0.5s;
+            background: white;
+            z-index: -1;
+            
+        }
+        .card:hover::before{
+            transform: scale(50);
+            height: 15px;
+            width: 15px;
+            transition: 0.5s;
+           
+
+
+            
+
+        }
+        .card:hover{
+             color: lightgreen;
+             transition: 0.5s;
+        }
+    </style>
+    <div class="sam">
+        <div class="card">
+            <h1>
+                Card
+            </h1>
+            <p>
+                our company will provide you some extra benefits .
+            </p>
+            <div class="corner">
+                +
+                
+            </div>
+            background <img src="" alt="">
+        </div>
+        
+    </div>
+    <script src="index2.js"></script>
+    
+</body>
+</html>
